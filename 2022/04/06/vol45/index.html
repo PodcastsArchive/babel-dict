@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>第42集：黑暗骑士再崛起（下）——小丑竟是我自己（嘉宾：偶然误差FM-李秋实） | 巴别塔词典</title>
+
+
+
+    <link rel="icon" href="/babel-dict/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/babel-dict/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/babel-dict/js/script.js"></script>
+    
+    <script src="/babel-dict/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/babel-dict/rss2.xml" title="巴别塔词典" type="application/rss+xml">
+<link rel="stylesheet" href="/babel-dict/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/babel-dict/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/babel-dict/">巴别塔词典</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/babel-dict/">巴别塔词典</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">第42集：黑暗骑士再崛起（下）——小丑竟是我自己（嘉宾：偶然误差FM-李秋实）</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2022-04-06&nbsp;&nbsp;06:47:41</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-rhiErOnl" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-rhiErOnl"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "第42集：黑暗骑士再崛起（下）——小丑竟是我自己（嘉宾：偶然误差FM-李秋实）",
+              author: "BabelDict",
+              url: "https://raw.githubusercontent.com/PodcastsArchive/babel-dict-source/master/audio/vol45.m4a",
+              pic: "https://podcastsarchive.github.io/babel-dict/image/img.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/624d4df40bc1b8e68a1e1221">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>【本期含《新蝙蝠侠》剧透】巴别塔词典和偶然误差主持人李秋实继续锐评《新蝙蝠侠》！上半部分里提到，《小丑》和这部电影都是反省式的作品，所以下半集里我们就详细探讨一下这两部电影究竟反映了怎样的现实。同时，我们也再次感谢李秋实为我们本期节目提供了抽奖赠品，详情请见评论区哦！</p><p><br /></p><p>主持人：姚天宜</p><p>常驻嘉宾：竹溪、鬼王橙</p><p>特邀嘉宾：李秋实（偶然误差FM）</p><p><br /></p><p>00:00:19—00:07:19 蝙蝠侠的右翼幻想</p><p>00:07:19—00:14:36 《新蝙蝠侠》的现实指向</p><p>00:14:36—00:23:14 新时代产生的角色双向固化</p><p>00:23:14—00:29:35 “政治正确”和“写实”的关联</p><p>00:29:35—00:37:49 漫改电影的困境和《新蝙蝠侠》的新意</p><p>00:37:49—00:45:09 《新蝙蝠侠》的谜题和隐喻</p><p>00:45:09—00:54:18 超英内容的新阶段</p><p><br /></p><p>参考阅读：</p><p>《蝙蝠侠：黑暗骑士归来》，作者：弗兰克·米勒</p><p>《假如我是蝙蝠侠》，作者：弗兰克·比弗·布拉迪</p><p><br /></p><p>结尾音乐：</p><p>“Batman: The Animated Series (Main Title)”，音乐人：Danny Elfman</p><p><br /></p><p>若对我们的节目感兴趣，可以在“湖岸”微信公众号后台、“巴别塔词典编辑部”微信群（添加微信号playtimeguy），以及新浪微博“@巴别塔词典”联系我们！</p>
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://podcastsarchive.github.io/babel-dict/2022/04/06/vol45/">https://podcastsarchive.github.io/babel-dict/2022/04/06/vol45/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/babel-dict/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/babel-dict/2022/04/13/vol46/">第43集：为什么（不）要看🔞</a>
+            
+            
+            <a class="next" rel="next" href="/babel-dict/2022/03/30/vol44/">第41集：黑暗骑士再崛起（上）——最写实的超级英雄（嘉宾：偶然误差FM-李秋实）</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>第09集：吴亦凡事件的元叙事里，你也是主角 | 巴别塔词典</title>
+
+
+
+    <link rel="icon" href="/babel-dict/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/babel-dict/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/babel-dict/js/script.js"></script>
+    
+    <script src="/babel-dict/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/babel-dict/rss2.xml" title="巴别塔词典" type="application/rss+xml">
+<link rel="stylesheet" href="/babel-dict/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/babel-dict/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/babel-dict/">巴别塔词典</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/babel-dict/">巴别塔词典</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">第09集：吴亦凡事件的元叙事里，你也是主角</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-07-28&nbsp;&nbsp;10:34:28</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-xsZeYYOO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-xsZeYYOO"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "第09集：吴亦凡事件的元叙事里，你也是主角",
+              author: "BabelDict",
+              url: "https://raw.githubusercontent.com/PodcastsArchive/babel-dict-source/master/audio/vol10.m4a",
+              pic: "https://podcastsarchive.github.io/babel-dict/image/img.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/61013331f28285a543e3e049">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>随着朝阳警方于7月22日发布情况通报，藏匿于吴亦凡与都美竹之间的两位“中间人”刘某迢与徐某浮出水面，也提醒着我们，除了吃瓜，在这起事件中我们还有其他需要关注的事情。从一开始的爆料阶段就不难注意到，舆论中始终存在对不同性别的道德双标。在这种环境下，对男性特权的反抗越来越激烈，但同时，“打拳”似乎也成为了某些人图谋不轨的掩饰。本期节目我们将就最近让大家“吴心工作”的吴亦凡都美竹事件展开，探讨互联网中性别特权，以及藏匿于背后的影子公关。</p><p><br /></p><p>主持人：姚天宜、鬼王橙</p><p>常驻嘉宾：竹溪（公众号：Vault_of_Kris）</p><p><br /></p><p>00:00:50—00:07:15 吴亦凡事件的前世今生</p><p>00:07:15—00:17:24 举棋不定的男性围观群众</p><p>00:17:24—00:27:53 女性发声所带来的“恐慌”</p><p>00:27:53—00:38:33 趁虚而入的危机公关</p><p>00:38:33—00:48:41 我们在吴亦凡事件中扮演的是什么角色？</p><p>00:48:41—00:55:15 反抗亘古不变的双重标准</p><p>00:55:18—00:55:58 结尾</p><p><br /></p><p>参考阅读：</p><p>《性、谎言、吹哨者》，作者：茱蒂·坎特、梅根·图伊</p><p>《知晓我姓名》，作者：香奈儿·米勒</p><p><br /></p><p>结尾音乐：</p><p>“Mortal Man”, Kendrick Lamar</p><p><br /></p><p>若对我们的节目感兴趣，可以在“湖岸”微信公众号后台，以及新浪微博“@巴别塔词典”联系我们！</p>
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://podcastsarchive.github.io/babel-dict/2021/07/28/vol10/">https://podcastsarchive.github.io/babel-dict/2021/07/28/vol10/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/babel-dict/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/babel-dict/2021/08/04/vol11/">第10集：“血槽空了！”游戏方言如何进入我们的生活</a>
+            
+            
+            <a class="next" rel="next" href="/babel-dict/2021/07/21/vol9/">第08集：为什么人人都爱“蒙古上单”？</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

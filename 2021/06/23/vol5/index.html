@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>第04集：象形文字复兴了，但它们真的通用吗？ | 巴别塔词典</title>
+
+
+
+    <link rel="icon" href="/babel-dict/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/babel-dict/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/babel-dict/js/script.js"></script>
+    
+    <script src="/babel-dict/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/babel-dict/rss2.xml" title="巴别塔词典" type="application/rss+xml">
+<link rel="stylesheet" href="/babel-dict/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/babel-dict/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/babel-dict/">巴别塔词典</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/babel-dict/">巴别塔词典</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">第04集：象形文字复兴了，但它们真的通用吗？</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-06-23&nbsp;&nbsp;08:28:48</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-dZArZEpP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-dZArZEpP"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "第04集：象形文字复兴了，但它们真的通用吗？",
+              author: "BabelDict",
+              url: "https://raw.githubusercontent.com/PodcastsArchive/babel-dict-source/master/audio/vol5.m4a",
+              pic: "https://podcastsarchive.github.io/babel-dict/image/img.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/60d2f58e9e282ee17815b645">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>本期节目实际录制时间为2021年2月。“梗图”“表情包”乃至“meme”都逐渐在网上全面普及，但早期简单易懂的颜文字如今已被更加复杂的图片文字结合体所替代，连这种网络“象形文字”也出现了高度的差异化。当你收藏表情包的时候，真的清楚它们背后所包含的意义吗？一个看着好玩的动图也许有着意想不到的隐含内容哦！</p><p><br /></p><p>主持人：姚天宜、鬼王橙</p><p>常驻嘉宾：竹溪</p><p><br /></p><p>00:00:34—00:05:29 《命运交叉的城堡》与图像化文字</p><p>00:05:29—00:08:28 emoji诞生的意义</p><p>00:08:28—00:13:55 暴走漫画与真人表情包</p><p>00:13:55—00:19:29 表情包中的“引用”与用户分化</p><p>00:19:29—00:30:34 如何应对表情包中的多重含义</p><p>00:30:34—00:41:45 “阶层方言”视角下的表情包</p><p>00:41:45—00:49:37 表情包的“零和游戏”与“文艺复兴”</p><p>00:49:37—00:52:22 内容总结</p><p><br /></p><p>参考阅读：</p><p>《命运交叉的城堡》，作者：伊塔洛·卡尔维诺</p><p>《神话修辞术》，作者：罗兰·巴特</p><p>《自私的基因》，作者：理查德·道金斯</p><p>《谜米机器》，作者：苏珊·布莱克摩尔</p><p><br /></p><p>结尾音乐：</p><p>《绝不饶恕》，韩剧《第五共和国》主题曲</p><p><br /></p><p>若对我们的节目感兴趣，可以在“湖岸”微信公众号后台联系我们！</p>
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://podcastsarchive.github.io/babel-dict/2021/06/23/vol5/">https://podcastsarchive.github.io/babel-dict/2021/06/23/vol5/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/babel-dict/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/babel-dict/2021/06/30/vol6/">第05集：“我他🐎的不是舔狗，草”</a>
+            
+            
+            <a class="next" rel="next" href="/babel-dict/2021/06/16/vol4/">第03集：回顾《无职转生》，解构尼特族的精神鸦片</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

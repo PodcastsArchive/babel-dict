@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>第19集：未曾设想的道路——游戏里的架空历史 | 巴别塔词典</title>
+
+
+
+    <link rel="icon" href="/babel-dict/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/babel-dict/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/babel-dict/js/script.js"></script>
+    
+    <script src="/babel-dict/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/babel-dict/rss2.xml" title="巴别塔词典" type="application/rss+xml">
+<link rel="stylesheet" href="/babel-dict/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/babel-dict/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/babel-dict/">巴别塔词典</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/babel-dict/">巴别塔词典</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">第19集：未曾设想的道路——游戏里的架空历史</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-10-13&nbsp;&nbsp;07:53:52</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-YxoTTggX" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-YxoTTggX"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "第19集：未曾设想的道路——游戏里的架空历史",
+              author: "BabelDict",
+              url: "https://raw.githubusercontent.com/PodcastsArchive/babel-dict-source/master/audio/vol20.m4a",
+              pic: "https://podcastsarchive.github.io/babel-dict/image/img.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/61669133d477af8164742856">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>光荣特库摩：日本游戏公司，由1978年成立的株式会社光荣和1967年成立的株式会社特库摩合并而成，《三国志》系列游戏的出品方。自1983年以来，光荣已经出品了14代《三国志》游戏和15代《信长之野望》游戏。</p><p>Paradox Interactive：瑞典游戏公司，自1999年成立，《钢铁雄心》系列游戏的出品方，被大陆玩家称为P社。旗下“P社四萌”为四个王牌系列游戏《钢铁雄心》《欧陆风云》《维多利亚》《十字军之王》。</p><p>本期节目中，我们就要聊一聊，这两个公司的游戏如何改变了中国众多网民们学习、理解历史的方法。</p><p><br /></p><p>主持人：姚天宜、鬼王橙</p><p>常驻嘉宾：竹溪（公众号：Vault_of_Kris）</p><p><br /></p><p>00:00:41—00:02:50 本期内容介绍</p><p>00:02:50—00:11:07 光荣的“三国”系列</p><p>00:11:07—00:19:28 玩游戏怎么学历史？</p><p>00:19:28—00:28:50 P社游戏的历史科普作用&nbsp;</p><p>00:29:04—00:37:52 历史游戏中的粗暴方法论</p><p>00:37:52—00:46:18 “精德”与历史的扁平化&nbsp;</p><p>00:46:18—00:58:06 “精日”与道德判断的缺失&nbsp;</p><p>00:58:06—01:05:48 玩游戏的魔怔人</p><p>01:05:48—01:06:00 结尾</p><p><br /></p><p>参考书目：</p><p>《高堡奇人》，作者：菲利普·K·迪克</p><p>《临高启明》，作者：吹牛者</p><p><br /></p><p>结尾音乐：</p><p>“Baba Yetu”（《文明IV》主题曲），音乐人： Christopher Tin</p><p><br /></p><p>若对我们的节目感兴趣，可以在“湖岸”微信公众号后台、“巴别塔词典编辑部”微信群，以及新浪微博“@巴别塔词典”联系我们！</p>
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://podcastsarchive.github.io/babel-dict/2021/10/13/vol20/">https://podcastsarchive.github.io/babel-dict/2021/10/13/vol20/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/babel-dict/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/babel-dict/2021/10/20/vol21/">第20集：“世界属于三体”（上）——刘慈欣如何成为弥赛亚</a>
+            
+            
+            <a class="next" rel="next" href="/babel-dict/2021/09/29/vol19/">第18集：然而中学究竟习得了什么，——大抵皆是烂梗罢</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

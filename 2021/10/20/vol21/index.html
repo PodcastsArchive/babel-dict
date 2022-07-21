@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>第20集：“世界属于三体”（上）——刘慈欣如何成为弥赛亚 | 巴别塔词典</title>
+
+
+
+    <link rel="icon" href="/babel-dict/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/babel-dict/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/babel-dict/js/script.js"></script>
+    
+    <script src="/babel-dict/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/babel-dict/rss2.xml" title="巴别塔词典" type="application/rss+xml">
+<link rel="stylesheet" href="/babel-dict/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/babel-dict/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/babel-dict/">巴别塔词典</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/babel-dict/">巴别塔词典</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/babel-dict/archives">Posts</a>
+                
+                    <a class="menu-item" href="/babel-dict/playlist">PlayList</a>
+                
+                    <a class="menu-item" href="/babel-dict/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">第20集：“世界属于三体”（上）——刘慈欣如何成为弥赛亚</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-10-20&nbsp;&nbsp;08:00:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-HsEJZeCJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-HsEJZeCJ"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "第20集：“世界属于三体”（上）——刘慈欣如何成为弥赛亚",
+              author: "BabelDict",
+              url: "https://raw.githubusercontent.com/PodcastsArchive/babel-dict-source/master/audio/vol21.m4a",
+              pic: "https://podcastsarchive.github.io/babel-dict/image/img.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/616fcf623180b2a2789e7df4">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>“[刘慈欣]单枪匹马，把中国科幻文学提升到了世界级的水平。”——严锋</p><p>《三体》系列完结10年后，无论人们承认与否，刘慈欣和他的作品早已载入了中国文学的史册。《三体》系列中的概念、词汇也在这10年里慢慢地融入了网络方言之中，并且往往以至高无上的形态存在着。本期节目中，我们将就上述两个问题来进行讨论，刘慈欣和《三体》真的拯救了中国的科幻文学乃至科幻读者吗？</p><p>此处附上竹溪写的两篇相关文章：</p><p><a target="_blank" href="https://mp.weixin.qq.com/s/cEjIPvq2Fj7Jrk0nxpPLZg" rel="nofollow noopener">聊聊《流浪地球》——刘慈欣最吸引人的地方在哪里？</a></p><p><a target="_blank" href="https://mp.weixin.qq.com/s/WJScbNPERSP_tYd4uln09w" rel="nofollow noopener">“我们”为什么需要一个弥赛亚？——中国科幻读者苦难叙事的根源</a></p><p><br /></p><p>主持人：姚天宜、鬼王橙</p><p>常驻嘉宾：竹溪（公众号：Vault_of_Kris）</p><p><br /></p><p>00:00:38—00:03:36 本期主题介绍</p><p>00:03:36—00:09:10 建国后的科幻文学发展</p><p>00:09:10—00:16:02 科幻杂志的兴衰和新科幻作家的出现</p><p>00:16:02—00:26:30 《三体》弥赛亚追随者和福音派</p><p>00:26:30—00:35:06 《三体》提名雨果奖的曲折道路</p><p>——本段中提到的“狗王”为极右翼基督教科幻作者Vox Day</p><p>00:35:06—00:41:17 《三体》获得雨果奖的曲折道路</p><p>——2015年雨果奖第二名的小说为女作家Katherine Addison的作品The Goblin Emperor（“妖精皇帝”）</p><p>00:41:17—00:52:08 《三体》系列的后续奖项争端和神化</p><p>——2016至2018年最佳长篇小说雨果奖均由非裔女作家N·K·杰米辛的“破碎的星球”系列小说获得</p><p>00:52:08—01:02:07 重提科幻文学的“软”“硬”之争</p><p>01:02:07—01:02:38 结尾和下期预告</p><p><br /></p><p>参考书目：</p><p>《星空的旋律》，作者：萧星寒</p><p>《刘慈欣谈科幻》，作者：刘慈欣</p><p><br /></p><p>结尾音乐：</p><p>“黑暗森林”（《我的三体之罗辑传》主题曲），音乐人： regulus、大九_LN</p><p><br /></p><p>若对我们的节目感兴趣，可以在“湖岸”微信公众号后台、“巴别塔词典编辑部”微信群，以及新浪微博“@巴别塔词典”联系我们！</p>
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://podcastsarchive.github.io/babel-dict/2021/10/20/vol21/">https://podcastsarchive.github.io/babel-dict/2021/10/20/vol21/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/babel-dict/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/babel-dict/2021/10/27/vol22/">第21集：“世界属于三体”（下）——周文王的黑暗森林</a>
+            
+            
+            <a class="next" rel="next" href="/babel-dict/2021/10/13/vol20/">第19集：未曾设想的道路——游戏里的架空历史</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
